@@ -4,9 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>my first project</title>
-</head>
-<body>
+</head>Exercise 6 Program 1 - Single Inheritance in Python
+
+<body>class Animal:
+ def speak(self):
+ return "Some sound"
+# Child class inheriting from Animal
+class Dog(Animal):
+ def speak(self): # Method overriding
+ return "Woof!"
+# Creating an instance of Dog
+dog = Dog()
+print(dog.speak()) # Output: Woof!
+</body><head>Exercise 6 Program 2 - Multilevel Inheritance in Python</head>
+<body>class Animal:
+ def sound(self):
+ return "Some sound"
+# Parent class
+class Mammal(Animal):
+ def feature(self):
+ return "Warm-blooded"
+# Child class inheriting from Mammal (which inherits from Animal)
+class Cat(Mammal):
+ def sound(self): # Method overriding
+ return "Meow!"
+# Creating an instance of Cat
+cat = Cat()
+print(cat.sound()) # Output: Meow!
+print(cat.feature()) # Output: Warm-bloode</body>
     fruits
     <img src="profile.jfif" alt="">
+
 </body>
 </html>
